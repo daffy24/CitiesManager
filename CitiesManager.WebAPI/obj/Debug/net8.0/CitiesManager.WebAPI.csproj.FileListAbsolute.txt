@@ -317,3 +317,4 @@ C:\Users\Lerka\RiderProjects\CitiesManagerSolution\CitiesManager.WebAPI\bin\Debu
 C:\Users\Lerka\RiderProjects\CitiesManagerSolution\CitiesManager.WebAPI\bin\Debug\net8.0\ClientApp\CitiesAngularApp\tsconfig.json
 C:\Users\Lerka\RiderProjects\CitiesManagerSolution\CitiesManager.WebAPI\bin\Debug\net8.0\ClientApp\CitiesAngularApp\tsconfig.spec.json
 C:\Users\Lerka\RiderProjects\CitiesManagerSolution\CitiesManager.WebAPI\bin\Debug\net8.0\ClientApp\CitiesAngularApp\dist\cities-angular-app\prerendered-routes.json
+C:\Users\Lerka\RiderProjects\CitiesManagerSolution\CitiesManager.WebAPI\obj\Debug\net8.0\CitiesManager.WebAPI.sourcelink.json

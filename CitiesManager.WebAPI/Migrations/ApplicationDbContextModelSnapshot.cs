@@ -24,7 +24,7 @@ namespace CitiesManager.WebAPI.Migrations
 
             modelBuilder.Entity("CitiesManager.WebAPI.Models.City", b =>
                 {
-                    b.Property<Guid>("CityId")
+                    b.Property<Guid>("CityID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
@@ -32,7 +32,7 @@ namespace CitiesManager.WebAPI.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.HasKey("CityId");
+                    b.HasKey("CityID");
 
                     b.ToTable("Cities");
 

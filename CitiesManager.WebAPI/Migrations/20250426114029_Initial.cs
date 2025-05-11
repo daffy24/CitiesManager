@@ -27,7 +27,7 @@ namespace CitiesManager.WebAPI.Migrations
 
             migrationBuilder.InsertData(
                 table: "Cities",
-                columns: new[] { "CityId", "CityName" },
+                columns: new[] { "CityID", "CityName" },
                 values: new object[,]
                 {
                     { new Guid("242335e4-cb96-4849-a203-3658e7421c73"), "Kivertsi" },

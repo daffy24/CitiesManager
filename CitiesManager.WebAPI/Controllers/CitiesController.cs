@@ -25,9 +25,9 @@ namespace CitiesManager.WebAPI.Controllers
 
         // GET: api/Cities/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<City>> GetCity(Guid id)
+        public async Task<ActionResult<City>> GetCity(Guid CityID)
         {
-            var city = await _context.Cities.FindAsync(id);
+            var city = await _context.Cities.FindAsync(CityID);
 
             if (city == null)
             {
@@ -39,15 +39,21 @@ namespace CitiesManager.WebAPI.Controllers
 
         // PUT: api/Cities/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutCity(Guid id, City city)
+        [HttpPut("{cityID}")]
+        public async Task<IActionResult> PutCity(Guid cityID, [Bind(nameof(City.CityID), nameof(City.CityName))] City city)
         {
-            if (id != city.CityId)
+            if (cityID != city.CityID)
             {
-                return BadRequest();
+                return BadRequest(); //HTTP 400
             }
 
-            _context.Entry(city).State = EntityState.Modified;
+            var existingCity = await _context.Cities.FindAsync(cityID);
+            if (existingCity == null)
+            {
+                return NotFound(); //HTTP 404
+            }
+
+            existingCity.CityName = city.CityName;
 
             try
             {
@@ -55,7 +61,7 @@ namespace CitiesManager.WebAPI.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!CityExists(id))
+                if (!CityExists(cityID))
                 {
                     return NotFound();
                 }
@@ -68,6 +74,8 @@ namespace CitiesManager.WebAPI.Controllers
             return NoContent();
         }
 
+
+
         // POST: api/Cities
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
@@ -76,7 +84,7 @@ namespace CitiesManager.WebAPI.Controllers
             _context.Cities.Add(city);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetCity", new { id = city.CityId }, city);
+            return CreatedAtAction("GetCity", new { id = city.CityID }, city);
         }
     
         // DELETE: api/Cities/5
@@ -97,7 +105,7 @@ namespace CitiesManager.WebAPI.Controllers
 
         private bool CityExists(Guid id)
         {
-            return _context.Cities.Any(e => e.CityId == id);
+            return _context.Cities.Any(e => e.CityID == id);
         }
     }
 }
