@@ -1,4 +1,4 @@
-using CitiesManager.WebAPI.DatabaseContext;
+using CitiesManager.Infrastructure.DatabaseContext;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -24,8 +24,6 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
 app.UseCors();
-
-Console.WriteLine("Active connection string: " + builder.Configuration.GetConnectionString("Default"));
 
 app.UseAuthorization();
 app.MapControllers();

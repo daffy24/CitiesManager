@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using CitiesManager.WebAPI.DatabaseContext;
-using CitiesManager.WebAPI.Models;
+using CitiesManager.Infrastructure.DatabaseContext;
+using CitiesManager.Core.Entities;
 
 namespace CitiesManager.WebAPI.Controllers
 {

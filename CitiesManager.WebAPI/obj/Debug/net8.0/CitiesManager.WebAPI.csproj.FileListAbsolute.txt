@@ -310,11 +310,8 @@ C:\Users\Lerka\RiderProjects\CitiesManagerSolution\CitiesManager.WebAPI\bin\Debu
 C:\Users\Lerka\RiderProjects\CitiesManagerSolution\CitiesManager.WebAPI\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\Lerka\RiderProjects\CitiesManagerSolution\CitiesManager.WebAPI\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\Lerka\RiderProjects\CitiesManagerSolution\CitiesManager.WebAPI\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
-C:\Users\Lerka\RiderProjects\CitiesManagerSolution\CitiesManager.WebAPI\bin\Debug\net8.0\ClientApp\CitiesAngularApp\angular.json
-C:\Users\Lerka\RiderProjects\CitiesManagerSolution\CitiesManager.WebAPI\bin\Debug\net8.0\ClientApp\CitiesAngularApp\package-lock.json
-C:\Users\Lerka\RiderProjects\CitiesManagerSolution\CitiesManager.WebAPI\bin\Debug\net8.0\ClientApp\CitiesAngularApp\package.json
-C:\Users\Lerka\RiderProjects\CitiesManagerSolution\CitiesManager.WebAPI\bin\Debug\net8.0\ClientApp\CitiesAngularApp\tsconfig.app.json
-C:\Users\Lerka\RiderProjects\CitiesManagerSolution\CitiesManager.WebAPI\bin\Debug\net8.0\ClientApp\CitiesAngularApp\tsconfig.json
-C:\Users\Lerka\RiderProjects\CitiesManagerSolution\CitiesManager.WebAPI\bin\Debug\net8.0\ClientApp\CitiesAngularApp\tsconfig.spec.json
-C:\Users\Lerka\RiderProjects\CitiesManagerSolution\CitiesManager.WebAPI\bin\Debug\net8.0\ClientApp\CitiesAngularApp\dist\cities-angular-app\prerendered-routes.json
 C:\Users\Lerka\RiderProjects\CitiesManagerSolution\CitiesManager.WebAPI\obj\Debug\net8.0\CitiesManager.WebAPI.sourcelink.json
+C:\Users\Lerka\RiderProjects\CitiesManagerSolution\CitiesManager.WebAPI\bin\Debug\net8.0\CitiesManager.Core.dll
+C:\Users\Lerka\RiderProjects\CitiesManagerSolution\CitiesManager.WebAPI\bin\Debug\net8.0\CitiesManager.Infrastructure.dll
+C:\Users\Lerka\RiderProjects\CitiesManagerSolution\CitiesManager.WebAPI\bin\Debug\net8.0\CitiesManager.Core.pdb
+C:\Users\Lerka\RiderProjects\CitiesManagerSolution\CitiesManager.WebAPI\bin\Debug\net8.0\CitiesManager.Infrastructure.pdb
